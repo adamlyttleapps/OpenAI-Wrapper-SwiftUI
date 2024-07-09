@@ -2,7 +2,7 @@
 
 An OpenAI Wrapper built in SwiftUI
 
-[![Watch the video](https://adamlyttleapps.com/demo/OpenAI-Wrapper-SwiftUI/demo.png)](https://adamlyttleapps.com/demo/OpenAI-Wrapper-SwiftUI/demo.mp4)
+[![Watch the video](https://adamlyttleapps.com/demo/OpenAI-Wrapper-SwiftUI/demo-v2.png)](https://adamlyttleapps.com/demo/OpenAI-Wrapper-SwiftUI/demo.mp4)
 
 ## Overview
 
