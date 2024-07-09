@@ -17,7 +17,7 @@ class ChatModel: ObservableObject, Identifiable, Codable {
     @Published var date: Date
     
     //customize the location of the openai_proxy.php script
-    //source code for openai_proxy.php available here: https://github.com/adamlyttleapps/OpenAIProxy-PHP
+    //source code for openai_proxy.php available here: https://github.com/adamlyttleapps/OpenAI-Proxy-PHP
     
     private let location = "https://adamlyttleapps.com/demo/OpenAIProxy-PHP/openai_proxy.php"
     
