@@ -37,7 +37,7 @@ These entries are necessary to request user permissions for accessing the photo 
 
 ## Contributions
 
-Contributions are welcome! Feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/adamlyttleapps/AIWrapper-SwiftUI).
+Contributions are welcome! Feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/adamlyttleapps/OpenAI-Wrapper-SwiftUI).
 
 ## MIT License
 
