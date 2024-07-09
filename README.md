@@ -16,7 +16,7 @@ AIWrapper-SwiftUI is a SwiftUI-based wrapper designed to leverage AI for vision-
 ## Usage
 
 1. **Open the code in XCode**
-2. **Update the Proxy Script Location:** In the ChatModel class, update the location property with the URL of your OpenAI proxy script. The source code for the openai_proxy.php script used in the demo is available at: [https://github.com/adamlyttleapps/OpenAI-Proxy-PHP](https://github.com/adamlyttleapps/OpenAI-Proxy-PHP).
+2. **Update the Proxy Script Location:** In the Models > ChatModel class, update the location property with the URL of your OpenAI proxy script. The source code for the openai_proxy.php script used in the demo is available at: [https://github.com/adamlyttleapps/OpenAI-Proxy-PHP](https://github.com/adamlyttleapps/OpenAI-Proxy-PHP).
 
 ```
 //customize the location of the openai_proxy.php script
