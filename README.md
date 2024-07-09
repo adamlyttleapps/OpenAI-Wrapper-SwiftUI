@@ -2,6 +2,8 @@
 
 An OpenAI Wrapper built in SwiftUI
 
+[![Watch the video]([https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/thumbnail.jpg]([https://adamlyttleapps.com/demo/OpenAI-Wrapper-SwiftUI/demo.png))](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/video.mp4](https://adamlyttleapps.com/demo/OpenAI-Wrapper-SwiftUI/demo.mp4)
+
 ## Overview
 
 AIWrapper-SwiftUI is a SwiftUI-based wrapper designed to leverage AI for vision-related tasks. This wrapper interacts with an OpenAI proxy script to secure API communications and protect your API key
