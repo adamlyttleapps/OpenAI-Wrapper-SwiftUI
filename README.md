@@ -1,6 +1,6 @@
-# AIWrapper-SwiftUI
+# OpenAI-Wrapper-SwiftUI
 
-An AI Vision Wrapper built in SwiftUI
+An OpenAI Wrapper built in SwiftUI
 
 ## Overview
 
