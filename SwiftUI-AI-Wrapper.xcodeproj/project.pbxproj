@@ -23,7 +23,6 @@
 		318DAF612C3BA56A00619995 /* InputMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318DAF602C3BA56A00619995 /* InputMessageView.swift */; };
 		318DAF632C3BA5C600619995 /* ConnectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318DAF622C3BA5C600619995 /* ConnectionRequest.swift */; };
 		318DAF652C3BA5FA00619995 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318DAF642C3BA5FA00619995 /* DateExtensions.swift */; };
-		318DAF672C3BA62900619995 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318DAF662C3BA62900619995 /* PhotoPicker.swift */; };
 		318DAF6B2C3CDE0100619995 /* StringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318DAF6A2C3CDE0100619995 /* StringHash.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 		318DAF602C3BA56A00619995 /* InputMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMessageView.swift; sourceTree = "<group>"; };
 		318DAF622C3BA5C600619995 /* ConnectionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionRequest.swift; sourceTree = "<group>"; };
 		318DAF642C3BA5FA00619995 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
-		318DAF662C3BA62900619995 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		318DAF6A2C3CDE0100619995 /* StringHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +81,6 @@
 				318DAF3E2C3BA1E900619995 /* ContentView.swift */,
 				318DAF502C3BA2DE00619995 /* HistoryView.swift */,
 				318DAF4A2C3BA22400619995 /* CameraView.swift */,
-				318DAF662C3BA62900619995 /* PhotoPicker.swift */,
 				318DAF5C2C3BA42800619995 /* PhotoView.swift */,
 				318DAF522C3BA2EF00619995 /* Models */,
 				318DAF682C3BADFE00619995 /* ChatViews */,
@@ -212,7 +209,6 @@
 				318DAF6B2C3CDE0100619995 /* StringHash.swift in Sources */,
 				318DAF612C3BA56A00619995 /* InputMessageView.swift in Sources */,
 				318DAF652C3BA5FA00619995 /* DateExtensions.swift in Sources */,
-				318DAF672C3BA62900619995 /* PhotoPicker.swift in Sources */,
 				318DAF3F2C3BA1E900619995 /* ContentView.swift in Sources */,
 				318DAF5D2C3BA42800619995 /* PhotoView.swift in Sources */,
 				318DAF3D2C3BA1E900619995 /* SwiftUI_AI_WrapperApp.swift in Sources */,
@@ -356,7 +352,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Access to your camera is required to take photos of objects";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Permission required to upload photos to the AI Wrapper";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -387,7 +382,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Access to your camera is required to take photos of objects";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Permission required to upload photos to the AI Wrapper";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

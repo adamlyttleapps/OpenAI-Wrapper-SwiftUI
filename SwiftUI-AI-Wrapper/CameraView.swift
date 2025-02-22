@@ -8,6 +8,7 @@
 
 import SwiftUI
 import AVFoundation
+import PhotosUI
 
 struct CameraView: View {
     
@@ -32,6 +33,7 @@ struct CameraView: View {
     //@State private var imagePickerOpacity: CGFloat = 0
     @State private var selectedImage: UIImage? = nil
     @State private var filename: String? = nil
+    @State private var selectedItem: PhotosPickerItem?
     
     @Binding var showHistory: Bool
     
@@ -158,10 +160,7 @@ struct CameraView: View {
                                 .padding(25)
                         }
                         .foregroundColor(.white)
-                        .sheet(isPresented: $showImagePicker) {
-                            PhotoPicker(isPresented: $showImagePicker, selectedImage: $selectedImage, filename: $filename)
-                                .accentColor(.blue)
-                        }
+                        .photosPicker(isPresented: $showImagePicker, selection: $selectedItem, matching: .images)
                         
                         Spacer()
                         Button(action: {
@@ -250,6 +249,11 @@ struct CameraView: View {
                 }
             }
         }
+        .onChange(of: selectedItem) { newItem in
+            if let item = newItem {
+                handleSelection(item: item)
+            }
+        }
         .edgesIgnoringSafeArea(.all)
     }
     
@@ -316,7 +320,32 @@ struct CameraView: View {
         }
     }
     
-    
+    // Handles the selected photo, extracting the image and filename.
+    private func handleSelection(item: PhotosPickerItem) {
+        // Load the image as a UIImage
+        item.loadTransferable(type: Data.self) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let data):
+                    if let data = data, let image = UIImage(data: data) {
+                        self.selectedImage = image
+                    }
+                case .failure(let error):
+                    self.selectedItem = nil
+                    print("Error loading image: \(error.localizedDescription)")
+                }
+            }
+        }
+
+        // Retrieve the filename (if available)
+        if let assetIdentifier = item.itemIdentifier {
+            let asset = PHAsset.fetchAssets(withLocalIdentifiers: [assetIdentifier], options: nil).firstObject
+            filename = asset?.value(forKey: "filename") as? String
+        }
+        
+        // Clear CameraRoll item selection
+        selectedItem = nil
+    }
 }
 
 

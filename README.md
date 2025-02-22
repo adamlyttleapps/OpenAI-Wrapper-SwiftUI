@@ -31,7 +31,6 @@ private let sharedSecretKey = "secret_key"
 3. **Configure Privacy Settings**: If you are adding this wrapper to an existing project, ensure that you add the following keys to your Info.plist:
 
 ```
-Privacy - Photo Library Usage Description
 Privacy - Camera Usage Description
 ```
 
